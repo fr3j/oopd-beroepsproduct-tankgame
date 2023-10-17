@@ -6,13 +6,10 @@ import com.github.hanyaeger.api.entities.SceneBorderCrossingWatcher;
 import com.github.hanyaeger.api.entities.impl.DynamicSpriteEntity;
 import com.github.hanyaeger.api.media.SoundClip;
 import com.github.hanyaeger.api.scenes.SceneBorder;
-import com.github.hanyaeger.tutorial.entities.map.Wall;
 
-/**
- * The type Bullet.
- */
+
 public class Bullet extends DynamicSpriteEntity implements Collider, SceneBorderCrossingWatcher {
-    private Player player;
+    private TankPlayer tankPlayer;
 
     private long lastBounceTime = 0;
     private static final long BOUNCE_COOLDOWN = 500;
@@ -24,12 +21,12 @@ public class Bullet extends DynamicSpriteEntity implements Collider, SceneBorder
    public int boundaryCrossings = 0;
    public int nrBounces = 0;
 
-    public Bullet(String sprite, Size size, Player player, int speed, int damage) {
-        super(sprite, player.getAnchorLocation(), size);
-        this.player = player;
+    public Bullet(String sprite, Size size, TankPlayer tankPlayer, int speed, int damage) {
+        super(sprite, tankPlayer.getAnchorLocation(), size);
+        this.tankPlayer = tankPlayer;
         this.damage = damage;
         this.bulletSpeed = speed;
-        bulletAngle = player.angle;
+        bulletAngle = tankPlayer.angle;
         setMotion(this.bulletSpeed, bulletAngle);
         setRotate(bulletAngle);
         var firesound = new SoundClip("audio/fire.wav");
@@ -95,8 +92,8 @@ public class Bullet extends DynamicSpriteEntity implements Collider, SceneBorder
         return nrBounces;
     }
 
-    public Player getPlayer(){
-        return player;
+    public TankPlayer getPlayer(){
+        return tankPlayer;
     }
 
     public boolean canBounce() {

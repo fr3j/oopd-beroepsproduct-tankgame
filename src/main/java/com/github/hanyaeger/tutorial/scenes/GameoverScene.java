@@ -2,17 +2,10 @@ package com.github.hanyaeger.tutorial.scenes;
 
 import com.github.hanyaeger.api.AnchorPoint;
 import com.github.hanyaeger.api.Coordinate2D;
-import com.github.hanyaeger.api.entities.YaegerEntity;
 import com.github.hanyaeger.api.entities.impl.TextEntity;
 import com.github.hanyaeger.api.scenes.DynamicScene;
-import com.github.hanyaeger.api.scenes.TileMapContainer;
 import com.github.hanyaeger.tutorial.Game;
-import com.github.hanyaeger.tutorial.entities.Player;
-import com.github.hanyaeger.tutorial.entities.Player1;
-import com.github.hanyaeger.tutorial.entities.Player2;
-import com.github.hanyaeger.tutorial.entities.Scoreboard;
 import com.github.hanyaeger.tutorial.entities.buttons.StartButton;
-import com.github.hanyaeger.tutorial.entities.map.WallTileMap;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;

@@ -16,15 +16,10 @@ public class Wall extends SpriteEntity implements Collided {
 
     @Override
     public void onCollision(Collider collider) {
-        if (collider instanceof Bullet) {
-            Bullet bullet = (Bullet) collider;
+        if (collider instanceof Bullet bullet) {
             if (bullet.canBounce()) {
                 bullet.mirrorAngleAgainstWall();
             }
         }
     }
-
-
-
-
 }
