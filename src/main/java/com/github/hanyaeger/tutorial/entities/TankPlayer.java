@@ -102,11 +102,13 @@ public abstract class TankPlayer extends DynamicSpriteEntity implements IMoveabl
     @Override
     public void shoot() {
         if (canShoot) {
-            Bullet bullet = new Bullet("sprites/bullet.png", new Size(30, 30), this, 4, 1);
+            double tankAngle = this.getAngle();
+            Bullet bullet = new Bullet("sprites/bullet.png", new Size(30, 30), this, 4, 1, tankAngle);
             gameScene.addEntityToScene(bullet);
             disableShootingTemporarily();
         }
     }
+
 
     private void disableShootingTemporarily() {
         canShoot = false;
@@ -191,6 +193,15 @@ public abstract class TankPlayer extends DynamicSpriteEntity implements IMoveabl
     @Override
     public void setSpeed(double speed) {
         super.setSpeed(speed);
+    }
+    @Override
+    public double getAngle(){
+        return this.angle;
+    }
+
+    @Override
+    public void setAngle(double angle){
+        this.angle = angle;
     }
 }
 

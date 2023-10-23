@@ -7,8 +7,7 @@ import com.github.hanyaeger.api.entities.Collider;
 import com.github.hanyaeger.api.entities.impl.SpriteEntity;
 import com.github.hanyaeger.tutorial.entities.Bullet;
 
-public class Wall extends SpriteEntity implements Collided {
-
+public class Wall extends SpriteEntity implements Collided, Collider {
     public Wall(Coordinate2D initialPosition, Size size, String sprite) {
         super(sprite, initialPosition, size);
     }

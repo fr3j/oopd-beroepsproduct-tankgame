@@ -8,4 +8,6 @@ public interface IMoveable {
     void setSpeed(double speed);
 
     void setAngle(double angle);
+
+    double getAngle();
 }

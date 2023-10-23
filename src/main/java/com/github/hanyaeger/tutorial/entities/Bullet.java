@@ -21,17 +21,18 @@ public class Bullet extends DynamicSpriteEntity implements Collider, SceneBorder
    public int boundaryCrossings = 0;
    public int nrBounces = 0;
 
-    public Bullet(String sprite, Size size, TankPlayer tankPlayer, int speed, int damage) {
+    public Bullet(String sprite, Size size, TankPlayer tankPlayer, int speed, int damage, double angle) {
         super(sprite, tankPlayer.getAnchorLocation(), size);
         this.tankPlayer = tankPlayer;
         this.damage = damage;
         this.bulletSpeed = speed;
-        bulletAngle = tankPlayer.angle;
+        this.bulletAngle = angle;
         setMotion(this.bulletSpeed, bulletAngle);
         setRotate(bulletAngle);
         var firesound = new SoundClip("audio/fire.wav");
         firesound.play();
     }
+
 
     @Override
     public void notifyBoundaryCrossing(SceneBorder border) {
@@ -82,14 +83,9 @@ public class Bullet extends DynamicSpriteEntity implements Collider, SceneBorder
         bounceSound.play();
     }
     public void checkCountBoundaryCrossings(int maxBoundaryCrossings) {
-        // also when the bullet hits the border for the third time it should be removed
-
         if (boundaryCrossings >= maxBoundaryCrossings) {
             remove();
         }
-    }
-    public int getNrBounces(){
-        return nrBounces;
     }
 
     public TankPlayer getPlayer(){

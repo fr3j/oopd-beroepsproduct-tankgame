@@ -25,12 +25,14 @@ public class ShootingHandler {
 
     private void shoot() {
         if (shooter.canShoot()) {
-            Bullet bullet = new Bullet("sprites/bullet.png", new Size(30, 30), (TankPlayer) shooter, 4, 1);
+            double tankAngle = shooter.getAngle();
+            Bullet bullet = new Bullet("sprites/bullet.png", new Size(30, 30), (TankPlayer) shooter, 4, 1, tankAngle);
             shooter.getGameScene().addEntityToScene(bullet);
             shooter.setBullet(bullet);
             disableShootingTemporarily();
         }
     }
+
 
     private void disableShootingTemporarily() {
         shooter.setCanShoot(false);

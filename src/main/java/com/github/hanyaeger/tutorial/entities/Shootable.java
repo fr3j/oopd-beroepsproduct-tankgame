@@ -9,5 +9,7 @@ public interface Shootable {
     GameScene getGameScene();
     Bullet getBullet();
     void setBullet(Bullet bullet);
+
+    double getAngle();
 }
 

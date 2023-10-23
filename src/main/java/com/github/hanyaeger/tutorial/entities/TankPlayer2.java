@@ -12,7 +12,7 @@ public class TankPlayer2 extends TankPlayer {
 
     public TankPlayer2(Coordinate2D location, GameScene gamescene, Scoreboard scoreboard) {
         super(location, gamescene, scoreboard);
-        movementHandler = new MovementHandler(this, angle, KeyCode.UP, KeyCode.DOWN, KeyCode.LEFT, KeyCode.RIGHT);
+        movementHandler = new MovementHandler(this, KeyCode.UP, KeyCode.DOWN, KeyCode.LEFT, KeyCode.RIGHT);
     }
     @Override
     public void onPressedKeysChange(Set<KeyCode> pressedKeys) {
@@ -32,7 +32,7 @@ public class TankPlayer2 extends TankPlayer {
     }
 
     @Override
-    public void setAngle(double angle) {
-        this.angle = angle;
+    public void shoot() {
+
     }
 }
