@@ -4,14 +4,14 @@ import com.github.hanyaeger.api.Size;
 import nl.github.fr3j.tankgimma.scenes.GameScene;
 import nl.github.fr3j.tankgimma.scenes.GameoverScene;
 import nl.github.fr3j.tankgimma.scenes.TitleScene;
-public class Game extends YaegerGame {
+public class TankGimma extends YaegerGame {
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
     public void setupGame() {
-        setGameTitle("YaegerTanks");
+        setGameTitle("TankGimma");
         setSize(new Size(800, 600));
     }
 

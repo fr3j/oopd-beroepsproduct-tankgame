@@ -27,15 +27,15 @@ public abstract class TankPlayer extends DynamicSpriteEntity implements IMoveabl
     private static final int INITIAL_LIVES = 3;
 
     protected double angle = 0;
-    private GameScene gameScene;
+    private final GameScene gameScene;
     private int lives = INITIAL_LIVES;
-    private Scoreboard scoreboard;
+    private final Scoreboard scoreboard;
     private Coordinate2D previousPosition;
     private Coordinate2D lastPositionBeforeMove;
     private BasicShield tankShield;
     private boolean usedShieldInThisLife = false;
     private boolean canShoot = true;
-    private Timer shootTimer = new Timer();
+    private final Timer shootTimer = new Timer();
     protected ShootingHandler shootingHandler;
     private Bullet bullet;
 
