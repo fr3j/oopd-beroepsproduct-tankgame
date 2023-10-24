@@ -1,12 +1,12 @@
 module waterworld {
     requires transitive hanyaeger;
 
-    exports com.github.hanyaeger.tutorial;
-    exports com.github.hanyaeger.tutorial.scenes;
+    exports nl.github.fr3j.tankgimma.scenes;
 
     opens audio;
     opens backgrounds;
     opens sprites;
-    exports com.github.hanyaeger.tutorial.entities.map;
-    exports com.github.hanyaeger.tutorial.entities;
+    exports nl.github.fr3j.tankgimma.entities.map;
+    exports nl.github.fr3j.tankgimma.entities;
+    exports nl.github.fr3j.tankgimma.core;
 }
