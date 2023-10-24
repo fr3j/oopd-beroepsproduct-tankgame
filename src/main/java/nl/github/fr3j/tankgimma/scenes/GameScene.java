@@ -7,8 +7,8 @@ import com.github.hanyaeger.api.scenes.TileMapContainer;
 import nl.github.fr3j.tankgimma.core.Game;
 import nl.github.fr3j.tankgimma.entities.TankPlayer1;
 import nl.github.fr3j.tankgimma.entities.TankPlayer2;
-import nl.github.fr3j.tankgimma.entities.Scoreboard;
-import nl.github.fr3j.tankgimma.entities.map.WallTileMap;
+import nl.github.fr3j.tankgimma.core.Scoreboard;
+import nl.github.fr3j.tankgimma.ui.map.WallTileMap;
 
 public class GameScene extends DynamicScene implements TileMapContainer {
     public final Game game;

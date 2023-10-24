@@ -1,6 +1,8 @@
-package nl.github.fr3j.tankgimma.entities;
+package nl.github.fr3j.tankgimma.handlers;
 
 import javafx.scene.input.KeyCode;
+import nl.github.fr3j.tankgimma.entities.TankPlayer;
+import nl.github.fr3j.tankgimma.interfaces.IMoveable;
 
 import java.util.Set;
 

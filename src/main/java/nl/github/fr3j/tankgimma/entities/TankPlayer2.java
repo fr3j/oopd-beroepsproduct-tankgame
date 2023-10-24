@@ -1,6 +1,8 @@
 package nl.github.fr3j.tankgimma.entities;
 
 import com.github.hanyaeger.api.Coordinate2D;
+import nl.github.fr3j.tankgimma.core.Scoreboard;
+import nl.github.fr3j.tankgimma.handlers.MovementHandler;
 import nl.github.fr3j.tankgimma.scenes.GameScene;
 import javafx.scene.input.KeyCode;
 

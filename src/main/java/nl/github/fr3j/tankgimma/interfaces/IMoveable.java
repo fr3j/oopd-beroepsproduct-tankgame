@@ -1,4 +1,4 @@
-package nl.github.fr3j.tankgimma.entities;
+package nl.github.fr3j.tankgimma.interfaces;
 
 public interface IMoveable {
     void setMotion(double speed, double direction);

@@ -3,6 +3,7 @@ package nl.github.fr3j.tankgimma.entities;
 import com.github.hanyaeger.api.Coordinate2D;
 import com.github.hanyaeger.api.Size;
 import com.github.hanyaeger.api.entities.impl.DynamicSpriteEntity;
+import nl.github.fr3j.tankgimma.interfaces.Shield;
 
 public class BasicShield extends DynamicSpriteEntity implements Shield {
     private boolean active = false;

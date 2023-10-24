@@ -1,4 +1,4 @@
-package nl.github.fr3j.tankgimma.entities.buttons;
+package nl.github.fr3j.tankgimma.ui.buttons;
 
 import com.github.hanyaeger.api.entities.impl.TextEntity;
 import com.github.hanyaeger.api.userinput.MouseButtonPressedListener;

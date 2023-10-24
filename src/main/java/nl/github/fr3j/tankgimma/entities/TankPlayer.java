@@ -9,7 +9,11 @@ import com.github.hanyaeger.api.entities.impl.DynamicSpriteEntity;
 import com.github.hanyaeger.api.media.SoundClip;
 import com.github.hanyaeger.api.scenes.SceneBorder;
 import com.github.hanyaeger.api.userinput.KeyListener;
-import nl.github.fr3j.tankgimma.entities.map.Wall;
+import nl.github.fr3j.tankgimma.core.Scoreboard;
+import nl.github.fr3j.tankgimma.ui.map.Wall;
+import nl.github.fr3j.tankgimma.handlers.ShootingHandler;
+import nl.github.fr3j.tankgimma.interfaces.IMoveable;
+import nl.github.fr3j.tankgimma.interfaces.Shootable;
 import nl.github.fr3j.tankgimma.scenes.GameScene;
 import javafx.scene.input.KeyCode;
 
@@ -19,8 +23,8 @@ import java.util.TimerTask;
 
 public abstract class TankPlayer extends DynamicSpriteEntity implements IMoveable, Shootable, SceneBorderCrossingWatcher, KeyListener, Collided {
 
+    public static final double ROTATION_INCREMENT = 10;
     private static final int INITIAL_LIVES = 3;
-    protected static final double ROTATION_INCREMENT = 10;
 
     protected double angle = 0;
     private GameScene gameScene;

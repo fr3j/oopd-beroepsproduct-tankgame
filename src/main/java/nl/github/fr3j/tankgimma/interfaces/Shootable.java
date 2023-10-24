@@ -1,5 +1,6 @@
-package nl.github.fr3j.tankgimma.entities;
+package nl.github.fr3j.tankgimma.interfaces;
 
+import nl.github.fr3j.tankgimma.entities.Bullet;
 import nl.github.fr3j.tankgimma.scenes.GameScene;
 
 public interface Shootable {

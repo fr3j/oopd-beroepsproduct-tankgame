@@ -1,4 +1,4 @@
-package nl.github.fr3j.tankgimma.entities.map;
+package nl.github.fr3j.tankgimma.ui.map;
 
 import com.github.hanyaeger.api.Coordinate2D;
 import com.github.hanyaeger.api.Size;

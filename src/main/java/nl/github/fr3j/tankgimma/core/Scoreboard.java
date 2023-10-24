@@ -1,4 +1,4 @@
-package nl.github.fr3j.tankgimma.entities;
+package nl.github.fr3j.tankgimma.core;
 
 import com.github.hanyaeger.api.Coordinate2D;
 import com.github.hanyaeger.api.entities.impl.TextEntity;

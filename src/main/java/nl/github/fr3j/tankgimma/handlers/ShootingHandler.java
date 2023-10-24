@@ -1,7 +1,10 @@
-package nl.github.fr3j.tankgimma.entities;
+package nl.github.fr3j.tankgimma.handlers;
 
 import com.github.hanyaeger.api.Size;
 import javafx.scene.input.KeyCode;
+import nl.github.fr3j.tankgimma.entities.Bullet;
+import nl.github.fr3j.tankgimma.entities.TankPlayer;
+import nl.github.fr3j.tankgimma.interfaces.Shootable;
 
 import java.util.Set;
 import java.util.Timer;
